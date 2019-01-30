@@ -17,6 +17,8 @@ date: 2019-01-30 20:31:00
 -  安装hexo
 > npm install -g hexo-cli
 
+<!-- more -->
+
 ## 运行
 
 - 创建hexo项目
@@ -88,6 +90,8 @@ hexo d == hexo deploy
 
 hexo s -g #生成并本地预览
 hexo d -g #生成并上传
+
+// 文章中可以用 <!-- more --> 来设置列表预览分割
 ```
 
 # Discus 开启匿名评论
