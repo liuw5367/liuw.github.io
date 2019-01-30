@@ -190,7 +190,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Follow me on GitHub banner in right-top corner.
@@ -214,7 +214,7 @@ avatar:
   # You can also use other linking images.
   url: #/images/avatar.gif
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
@@ -311,9 +311,9 @@ codeblock:
   border_radius:
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
-    show_result: false
+    show_result: true
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -326,7 +326,7 @@ codeblock:
 # And you can show or hide one article specially through add page variable `reward: true/false`.
 reward:
   enable: true
-  #comment: Donate comment here
+  comment: 随手配置的，无视下面的按钮吧
   wechatpay: /images/wechatpay.png
   alipay: /images/alipay.png
   #bitcoin: /images/bitcoin.jpg
@@ -701,12 +701,12 @@ firestore:
 # Show Views/Visitors of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: user
   total_views: true
   total_views_icon: eye
-  post_views: true
+  post_views: false
   post_views_icon: eye
 
 # Tencent analytics ID
@@ -861,7 +861,7 @@ pace_theme: pace-theme-minimal
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest:
   enable: false
-  onmobile: true # display on mobile or not
+  onmobile: false # display on mobile or not
   color: '0,0,255' # RGB values, use ',' to separate
   opacity: 0.5 # the opacity of line: 0~1
   zIndex: -1 # z-index property of the background
