@@ -138,13 +138,13 @@ exturl: false
 # External url should start with http:// or https://
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  # commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons / item badges.
 menu_settings:
@@ -510,7 +510,7 @@ pangu: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 413a4431d5a0cfce1e6e62fc594c5c48
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -518,8 +518,8 @@ pangu: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: liuw5367
   count: true
   lazyload: false
 
@@ -580,7 +580,7 @@ gitalk:
 # Baidu Share
 # Available values: button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+baidushare: true
 ##  type: button
 
 # AddThis Share, See: https://www.addthis.com
@@ -679,9 +679,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 9PpTiydAA0FnDaNTsXQHBwGD-gzGzoHsz
+  app_key: qulMt32wcR6yl7BFgg1rESJD
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
