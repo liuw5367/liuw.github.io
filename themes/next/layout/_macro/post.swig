@@ -347,6 +347,12 @@
       </div>
     {% endif %}
 
+    <div>
+          {% if not is_index %}
+            {% include 'my-copyright.swig' %}
+          {% endif %}
+    </div>
+    
     {% if page.reward === undefined and theme.reward.enable %}
       {% set reward_able = true %}
     {% else %}

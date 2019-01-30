@@ -3,6 +3,7 @@ tags:
   - 环境配置
 categories: []
 date: 2019-01-30 20:31:00
+copyright: true
 ---
 # 安装
 
