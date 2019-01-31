@@ -44,7 +44,7 @@ page:
   totally: 共有
   tags: 标签
 footer:
-  powered: "由 %s 强力驱动"
+  powered: "由 %s 驱动"
   theme: 主题
   total_views: 总访问量
   total_visitors: 总访客量
@@ -81,7 +81,7 @@ symbol:
   period: "。"
   colon: "："
 reward:
-  donate: 打赏
+  donate: 赏
   wechatpay: 微信支付
   alipay: 支付宝
   bitcoin: 比特币
@@ -91,8 +91,8 @@ accessibility:
   prev_page: 上一页
   next_page: 下一页
 symbols_count_time:
-  count: 本文字数
+  count: 字数
   count_total: 站点总字数
   time: 阅读时长
   time_total: 站点阅读时长
-  time_minutes: 分钟
+  time_minutes: 分

@@ -520,8 +520,8 @@ baidu_analytics: 413a4431d5a0cfce1e6e62fc594c5c48
 disqus:
   enable: true
   shortname: liuw5367
-  count: true
-  lazyload: false
+  count: false
+  lazyload: true
 
 # Changyan
 changyan:
@@ -547,7 +547,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+# livere_uid: MTAyMC80MjQ2MS8xOTAwOA
 
 # Gitment
 # Introduction: https://github.com/imsun/gitment
