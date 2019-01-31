@@ -8,4 +8,12 @@
         <tag>Test</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[Hexo-Next主题搭建]]></title>
+    <url>%2F2019%2F01%2F31%2FHexo-Next%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[安装Next 主题配置网站，很全面 工具 安装git brew install git 安装node brew install node 安装hexo npm install -g hexo-cli 运行 创建hexo项目 hexo init 安装必要的工具 12345// Git自动上传npm install hexo-deployer-git --save// 管理页面，可以在网页上编辑 http://localhost:4000/adminnpm install hexo-admin --save 下载next皮肤，在hexo项目中的theme文件夹下clone项目。（hexo项目文件夹下有个配置文件，配置项目的。皮肤文件夹下，也有个配置文件，可以对皮肤修改。不要弄混了） 1git clone https://github.com/theme-next/hexo-theme-next.git 在hexo项目的配置文件中设置主题为 next theme: hexo-theme-next 依赖库 npm install 生成静态文件 hexo generate 运行 hexo server –debug 发布 hexo generate -d 安装 hexo-deployer-git npm install hexo-deployer-git –save 可以创建两个分支，dev分支为开发代码，放网站原始文件，设置deploy的分支为master，将静态文件直接上传 。下面为hexo目录下的的git配置 123456deploy: type: git # 对应仓库的SSH地址 repo: git@github.com.git # 要上传的分支 branch: master 常用命令123456789101112131415161718hexo new &quot;postName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）hexo deploy #部署到GitHubhexo help # 查看帮助hexo version #查看Hexo的版本// 缩写hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deployhexo s -g #生成并本地预览hexo d -g #生成并上传// 文章中可以用 &lt;!-- more --&gt; 来设置列表预览分割 Discus 开启匿名评论 Settings -&gt; Community -&gt; Guest Commenting -&gt; Allow guests to comment (Enable) 参考文章https://www.jianshu.com/p/7b5702d3f072]]></content>
+      <tags>
+        <tag>环境配置</tag>
+      </tags>
+  </entry>
 </search>
