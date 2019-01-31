@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Github-Hexo-NexT搭建]]></title>
+    <url>%2F2019%2F02%2F01%2FGithub-Hexo-NexT%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[这两天突然又想折腾一下 github.io，上次建好以后，好像有三四年了吧，但文章是一次也没有发过…看到好多人的网站都是NexT主题，就给自己的也重新搭建了一下 安装 Hexo 这套皮肤是跑在hexo上的，所以需要新建一个hexo项目，然后将next放到theme文件夹下 NextT 主题配置网站，可以仔细看看，很全面，基本够用了 工具 安装git 1brew install git 安装node 1brew install node 安装hexo 1npm install -g hexo-cli 运行 创建hexo项目 1hexo init project-name 安装必要的工具 12345// Git自动上传npm install hexo-deployer-git --save// 管理页面，可以在网页上编辑 http://localhost:4000/adminnpm install hexo-admin --save 下载next皮肤，在hexo项目中的theme文件夹下clone项目。（hexo项目文件夹下有个配置文件，配置项目的。皮肤文件夹下，也有个配置文件，可以对皮肤修改。不要弄混了） 1git clone https://github.com/theme-next/hexo-theme-next.git 在hexo项目的配置文件中设置主题为 next 1theme: hexo-theme-next 安装依赖 1npm install 生成静态文件 1hexo generate 运行 1hexo server --debug 发布1hexo generate -d 需要安装 hexo-deployer-git，才能自动发布。1npm install hexo-deployer-git --save 可以创建两个分支，dev分支为开发代码，放网站原始文件，设置deploy的分支为master，将静态文件直接上传 。下面为hexo目录下的的git配置 123456deploy: type: git # 对应仓库的SSH地址。需要在github上配置好ssh repo: git@github.com.git # 要上传的分支 branch: master 遇到的问题 没有hexo命令server无法运行 对hexo不了解，一开始我以为next是一个完整的项目，有配置文件能直接跑起来呢，想多了，只是一个theme。依赖里面也没有hexo-server这个包。把主题放到hexo项目里就好了 leanCloud阅读统计显示初始化失败 主题配置文件里有个security，关掉就可以了。我也没仔细看什么什么意思。没啥要求，能用就行。后面又看到busuanzi，直接开启就能用，不仅有阅读数，还能统计站点访问量和人数… deploy后页面和本地不一致 也不清楚怎么好的，多clean，generate再上传吧 列表的文章显示的太长 主题有个配置，可以设置显示的字符长度，但是markdown在列表里就不能预览了，而且不可控。推荐使用&lt;! – more –&gt; 进行分割，设置列表中文章从哪里显示阅读更多按钮 常用命令12345678910111213141516hexo new &quot;postName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）hexo deploy #部署到GitHubhexo help # 查看帮助hexo version #查看Hexo的版本// 缩写hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deployhexo s -g #生成并本地预览hexo d -g #生成并上传 Discus 开启匿名评论 Settings -&gt; Community -&gt; Guest Commenting -&gt; Allow guests to comment (Enable) 参考文章https://www.jianshu.com/p/7b5702d3f072 http://shenzekun.cn/ https://blog.csdn.net/marvinboy/article/details/83350437]]></content>
+      <tags>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F01%2F31%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>Test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo-Next主题搭建]]></title>
-    <url>%2F2019%2F01%2F31%2FHexo-Next%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%2F</url>
-    <content type="text"><![CDATA[安装Next 主题配置网站，很全面 工具 安装git brew install git 安装node brew install node 安装hexo npm install -g hexo-cli 运行 创建hexo项目 hexo init 安装必要的工具 12345// Git自动上传npm install hexo-deployer-git --save// 管理页面，可以在网页上编辑 http://localhost:4000/adminnpm install hexo-admin --save 下载next皮肤，在hexo项目中的theme文件夹下clone项目。（hexo项目文件夹下有个配置文件，配置项目的。皮肤文件夹下，也有个配置文件，可以对皮肤修改。不要弄混了） 1git clone https://github.com/theme-next/hexo-theme-next.git 在hexo项目的配置文件中设置主题为 next theme: hexo-theme-next 依赖库 npm install 生成静态文件 hexo generate 运行 hexo server –debug 发布 hexo generate -d 安装 hexo-deployer-git npm install hexo-deployer-git –save 可以创建两个分支，dev分支为开发代码，放网站原始文件，设置deploy的分支为master，将静态文件直接上传 。下面为hexo目录下的的git配置 123456deploy: type: git # 对应仓库的SSH地址 repo: git@github.com.git # 要上传的分支 branch: master 常用命令123456789101112131415161718hexo new &quot;postName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）hexo deploy #部署到GitHubhexo help # 查看帮助hexo version #查看Hexo的版本// 缩写hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deployhexo s -g #生成并本地预览hexo d -g #生成并上传// 文章中可以用 &lt;!-- more --&gt; 来设置列表预览分割 Discus 开启匿名评论 Settings -&gt; Community -&gt; Guest Commenting -&gt; Allow guests to comment (Enable) 参考文章https://www.jianshu.com/p/7b5702d3f072]]></content>
-      <tags>
-        <tag>环境配置</tag>
       </tags>
   </entry>
 </search>
